@@ -26,13 +26,6 @@ rootProject.allprojects {
         google()
         jcenter()
         mavenLocal()
-        maven {
-        url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
-            credentials {
-                username 'cybersource_xendit_payfac_cards'
-                password 'AKCp8k7kDxqgxY63sahozmx9h2wLR8QikWwSPnQyZZxy63juWsQJ8PevpWY6s3eREW4rrzTyj'
-            }
-        }
     }
 }
 
@@ -47,6 +40,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.xendit:xendit-android:3.6.1'
-    implementation 'org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.4-1'
+    implementation 'com.xendit:xendit-android:3.8.5'
 }
